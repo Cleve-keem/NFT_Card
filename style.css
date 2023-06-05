@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Outfit:wght@300;400;600&family=Raleway:ital,wght@0,600;0,700;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main: hsl(217, 54%, 11%);  /*   (body BG)   */
+    --Very-dark-blue: hsl(216, 50%, 16%);  /*   (card BG)   */
+    --Very-dark-blue-line: hsl(215, 32%, 27%);  /*    (line)     */
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    font-size: 18px;
+    background-color: var(--Very-dark-blue-main);
+    /* font-family: 'Outfit', sans-serif; */
+    font-family: 'Kumbh Sans', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.equilibrium-image{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.main{
+    width: 300px;
+    background-color: var(--Very-dark-blue);
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    color: var(--White);
+    box-shadow: 3px 2px 10px black;
+}
+.container{
+    padding: 1rem 0;
+}
+h3{
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+h3:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+p{
+    font-size: 15px;
+    margin-bottom: 2rem;
+    color: var(--Soft-blue);
+}
+.rates{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.left span{
+    margin-left: 0.5rem;
+    color: var(--Cyan);
+    font-weight: bold;
+    font-size: 15px;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right .clock{
+    margin-right: 0.4rem;
+}
+.right p{
+    text-align: center;
+    margin: 0;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: var(--Very-dark-blue-line);
+    margin: 1.5rem 0;
+}
+.footer{
+    display: flex;
+    align-items: center;
+}
+img.avatar{
+    width: 30px;
+    outline: 2px solid var(--Cyan);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.footer p{
+    margin: 0;
+}
+.footer span{
+    color: var(--White);
+}
+.footer span:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
